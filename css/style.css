@@ -1,0 +1,58 @@
+body{
+ margin: 0px;
+ padding: 0px;
+}
+header{ 
+    display: flex;
+   justify-content: space-between;
+align-items: center;
+background-image: url(/pic/b2.jpg); 
+width: 100%; height: 85px;
+}
+img{ height: 65px; margin-right: 20px;}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(179, 97, 103); margin-right: 25px; font-size: x-large; 
+}
+nav ul li{
+    list-style: none;
+    }
+    nav ul{
+        display: flex; 
+    }
+    input{
+        border-radius: 15px;padding-left: 6px;padding-right: 6px;
+        height: 40px; width: 200px;
+    }
+    input:focus{
+        background-color: rgb(252,221,203);
+    }
+    p{
+    border: 1px solid ;
+    scroll-behavior: auto; text-align: justify; padding: 10px;
+    border-radius: 8px;width: 900px;
+    }
+    .whatsapp{
+        height: 150px;
+        width: 150px;
+       border-radius: 50%;
+       background-color:rgb(251,196,181);
+         position: sticky;
+         left: 20px; bottom: 20px;
+    }
+   .whatsapp {
+        text-align: center; }
+        .hamburger{ 
+        margin-left: 20px; color: rgb(179, 97, 103);font-size: larger;
+        display: none;
+   
+        }
+@media (max-width:784px) {
+    .hamburger{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+        
