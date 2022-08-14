@@ -27,11 +27,35 @@ nav ul li{
     input:focus{
         background-color: rgb(252,221,203);
     }
+    .hamburger{ 
+        display: none;
+    margin-left: 20px; color: rgb(179, 97, 103);font-size: larger; 
+
+       }
+@media (max-width:904px) {
+.hamburger{
+    display: block;
+}
+nav{
+    display: none;
+}
+}
+    
     p{
     border: 1px solid ;
     scroll-behavior: auto; text-align: justify; padding: 10px;
     border-radius: 8px;width: 900px;
     }
+
+
+
+
+
+
+
+
+
+
     @keyframes tell {
         from{
             transform: rotate(0deg);
@@ -59,18 +83,29 @@ nav ul li{
         a{
             color: rgb(105, 27, 3); font-size: 20px;font-weight: bold;
         }
-        .hamburger{ 
-            display: none;
-        margin-left: 20px; color: rgb(179, 97, 103);font-size: larger; 
-
-   
+        @keyframes pic {
+            from{
+                filter: grayscale(100%);
+            }
+            to{
+                filter: grayscale(0%);
+            }
         }
-@media (max-width:904px) {
-    .hamburger{
-        display: block;
-    }
-    nav{
-        display: none;
-    }
-}
-        
+       .table1 img{
+        display: inline;   
+        height: 200px;width: 250px; border-radius: 6px;
+filter: grayscale(100%);
+       }
+       .table1 img:hover{
+          animation-name:pic ;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+          cursor: pointer;
+          transform:rotateX(16deg);
+          transition: 2s;
+       }
+
+
+
+
+
