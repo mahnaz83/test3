@@ -22,7 +22,7 @@ nav ul li{
     }
     input{
         border-radius: 15px;padding-left: 6px;padding-right: 6px;
-        height: 40px; width: 200px;
+        height: 40px; width: 300px;
     }
     input:focus{
         background-color: rgb(252,221,203);
@@ -32,22 +32,40 @@ nav ul li{
     scroll-behavior: auto; text-align: justify; padding: 10px;
     border-radius: 8px;width: 900px;
     }
+    @keyframes tell {
+        from{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
     .whatsapp{
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
        border-radius: 50%;
-       background-color:rgb(251,196,181);
+       border-top: 7px dashed rgb(133, 89, 78);
+       border-left: 7px dashed rgb(129, 42, 7);
+       border-right: 7px solid rgb(223, 126, 71);
+       animation-name: tell;
+       animation-duration: 9s;
+       animation-iteration-count: infinite;
+     /*   animation-timing-function: linear; */
          position: sticky;
          left: 20px; bottom: 20px;
     }
    .whatsapp {
         text-align: center; }
+        a{
+            color: rgb(105, 27, 3); font-size: 20px;font-weight: bold;
+        }
         .hamburger{ 
-        margin-left: 20px; color: rgb(179, 97, 103);font-size: larger;
-        display: none;
+            display: none;
+        margin-left: 20px; color: rgb(179, 97, 103);font-size: larger; 
+
    
         }
-@media (max-width:784px) {
+@media (max-width:904px) {
     .hamburger{
         display: block;
     }
